@@ -22,7 +22,7 @@ while True:
     if re.search('news', res):
         news_res = obj.news()
         pprint.pprint(news_res)
-        t2s(f"I have found {len(news_res)} news. You can read it. Let me tell you first 2 of them")
+        t2s(f"I have found {len(news_res)} news articles. Let me read you the first two.")
         t2s(news_res[0])
         t2s(news_res[1])
 
@@ -74,8 +74,8 @@ while True:
         t2s(f"I am {response}, thank you for asking!")
 
     if re.search('your name|who are you', res):
-        print("My name is Evo, I am your personal assistant")
-        t2s("My name is Evo, I am your personal assistant")
+        print("My name is EVO, and I am your personal assistant. Feel free to ask me about what I can do!")
+        t2s("My name is EVO, and I am your personal assistant. Feel free to ask me about what I can do!")
 
     if re.search('what can you do', res):
         li_commands = {
