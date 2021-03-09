@@ -39,6 +39,6 @@ while True:
 
     engine.runAndWait()
 
-    #print(values[0])
+    print(values[0])
 
 window.close()
